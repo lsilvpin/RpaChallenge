@@ -1,5 +1,4 @@
-﻿using Google.Apis.Sheets.v4.Data;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
@@ -32,6 +31,7 @@ namespace RpaChallenge
         Logger("--- O Robô Iniciou ------------------------------------------------------");
         ExecuteAndLog(OpenBrowser(), "OpenBrowser()"); // Abre o navegador
         ExecuteAndLog(NavigateToChallengePage(), "NavigateToChallengePage()"); // Navega até a página do desafio
+        ExecuteAndLog(ClickOnStart(), "ClickOnStart()"); // Clica no botão Start
         ExecuteAndLog(DownloadSpreadSheet(), "DownloadSpreadSheet()"); // Baixa (e move) o arquivo do excel
         ExecuteAndLog(XlToJson(), "XltoJson()"); // Converte Excel para Json
         ExecuteAndLog(JsonToEntityAndCollect(), "JsonToEntity()"); // Converte Json para Entidade e Coleta lista
@@ -122,36 +122,6 @@ namespace RpaChallenge
         return true;
       }
       return false;
-    }
-    /// <summary>
-    /// Preenche o formulário dinâmico
-    /// </summary>
-    /// <returns></returns>
-    private static bool FillForm(string roleInCompany, string lastName, string email, string firstName,
-      string companyName, string phoneNumber, string address)
-    {
-      // Primeiro temos que mapear os campos do formulário
-      Dictionary<string, string> formMap = new Dictionary<string, string>();
-      for (int i = 1; i <= 7; i++)
-      {
-        formMap.Add(_driver.FindElement(By.XPath($"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/label")).Text, $"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/input");
-      }
-      // Agora é só usar o mapa para preencher os campos corretamente
-      return KeepTryingUntil("InputKeys", formMap["Role in Company"], 3000, roleInCompany) &&
-        KeepTryingUntil("InputKeys", formMap["Last Name"], 3000, lastName) &&
-        KeepTryingUntil("InputKeys", formMap["Email"], 3000, email) &&
-        KeepTryingUntil("InputKeys", formMap["First Name"], 3000, firstName) &&
-        KeepTryingUntil("InputKeys", formMap["Company Name"], 3000, companyName) &&
-        KeepTryingUntil("InputKeys", formMap["Phone Number"], 3000, phoneNumber) &&
-        KeepTryingUntil("InputKeys", formMap["Address"], 3000, address);
-    }
-    /// <summary>
-    /// Submete o formulário dinâmico (já preenchido)
-    /// </summary>
-    /// <returns></returns>
-    private static bool SubmitForm()
-    {
-      return KeepTryingUntil("Click", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input", 3000);
     }
     /// <summary>
     /// Converte arquivo Excel para Json
@@ -279,6 +249,41 @@ namespace RpaChallenge
         Logger(e.Message);
         return false;
       }
+    }
+    /// <summary>
+    /// Preenche o formulário dinâmico
+    /// </summary>
+    /// <returns></returns>
+    private static bool FillForm(string roleInCompany, string lastName, string email, string firstName,
+      string companyName, string phoneNumber, string address)
+    {
+      // Primeiro temos que mapear os campos do formulário
+      Dictionary<string, string> formMap = new Dictionary<string, string>();
+      for (int i = 1; i <= 7; i++)
+      {
+        formMap.Add(_driver.FindElement(By.XPath($"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/label")).Text, $"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/input");
+      }
+      // Agora é só usar o mapa para preencher os campos corretamente
+      return KeepTryingUntil("InputKeys", formMap["Role in Company"], 3000, roleInCompany) &&
+        KeepTryingUntil("InputKeys", formMap["Last Name"], 3000, lastName) &&
+        KeepTryingUntil("InputKeys", formMap["Email"], 3000, email) &&
+        KeepTryingUntil("InputKeys", formMap["First Name"], 3000, firstName) &&
+        KeepTryingUntil("InputKeys", formMap["Company Name"], 3000, companyName) &&
+        KeepTryingUntil("InputKeys", formMap["Phone Number"], 3000, phoneNumber) &&
+        KeepTryingUntil("InputKeys", formMap["Address"], 3000, address);
+    }
+    /// <summary>
+    /// Submete o formulário dinâmico (já preenchido)
+    /// </summary>
+    /// <returns></returns>
+    private static bool SubmitForm()
+    {
+      return KeepTryingUntil("Click", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input", 3000);
+    }
+
+    private static bool ClickOnStart()
+    {
+      return KeepTryingUntil("Click", "/html/body/app-root/div[2]/app-rpa1/div/div[1]/div[6]/button", 3000);
     }
   }
 }
