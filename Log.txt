@@ -1,0 +1,24 @@
+10/07/2020 15:59:50: --- O Robô Iniciou ------------------------------------------------------
+10/07/2020 15:59:55: A ação OpenBrowser() foi executada com sucesso
+10/07/2020 16:00:05: A ação NavigateToChallengePage() foi executada com sucesso
+10/07/2020 16:00:05: A ação DownloadSpreadSheet() foi executada com sucesso
+10/07/2020 16:00:07: A ação FillFormAndSubmit() foi executada com sucesso
+10/07/2020 16:00:07: --- O Robô Finalizou ------------------------------------------------------
+10/07/2020 16:01:32: --- O Robô Iniciou ------------------------------------------------------
+10/07/2020 16:01:36: A ação OpenBrowser() foi executada com sucesso
+10/07/2020 16:01:46: A ação NavigateToChallengePage() foi executada com sucesso
+10/07/2020 16:01:46: A ação DownloadSpreadSheet() foi executada com sucesso
+10/07/2020 16:01:48: A ação FillFormAndSubmit() foi executada com sucesso
+10/07/2020 16:01:48: --- O Robô Finalizou ------------------------------------------------------
+10/07/2020 16:03:09: --- O Robô Iniciou ------------------------------------------------------
+10/07/2020 16:03:13: A ação OpenBrowser() foi executada com sucesso
+10/07/2020 16:03:22: A ação NavigateToChallengePage() foi executada com sucesso
+10/07/2020 16:03:23: A ação DownloadSpreadSheet() foi executada com sucesso
+10/07/2020 16:03:25: A ação FillFormAndSubmit() foi executada com sucesso
+10/07/2020 16:03:25: --- O Robô Finalizou ------------------------------------------------------
+11/07/2020 01:41:32: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 01:41:38: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 01:41:48: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 01:41:49: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 01:41:51: A ação FillFormAndSubmit() foi executada com sucesso
+11/07/2020 01:41:51: --- O Robô Finalizou ------------------------------------------------------
