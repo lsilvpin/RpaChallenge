@@ -1,10 +1,13 @@
-﻿using OpenQA.Selenium;
+﻿using Google.Apis.Sheets.v4.Data;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
+using Syncfusion.XlsIO;
+using Newtonsoft.Json;
 
 namespace RpaChallenge
 {
@@ -30,11 +33,12 @@ namespace RpaChallenge
         ExecuteAndLog(OpenBrowser(), "OpenBrowser()"); // Abre o navegador
         ExecuteAndLog(NavigateToChallengePage(), "NavigateToChallengePage()"); // Navega até a página do desafio
         ExecuteAndLog(DownloadSpreadSheet(), "DownloadSpreadSheet()"); // Baixa (e move) o arquivo do excel
-        // ExecuteAndLog(MoveAndReadSheet(), "MoveAndReadSheet()"); // Coleta os funcionários do excel
-        for (int i = 0; i < 10; i++)
+        ExecuteAndLog(XlToJson(), "XltoJson()"); // Converte Excel para Json
+        ExecuteAndLog(JsonToEntityAndCollect(), "JsonToEntity()"); // Converte Json para Entidade e Coleta lista
+        foreach (Employee employee in _employees)
         { // Este loop deve ser repetido, uma vez para cada empregado presente na spreadsheet
-          ExecuteAndLog(FillForm("Centers Junior", "da Silva Pinheiro", "lsilvpin@everis.com",
-          "Luís Henrique", "everis", "5534920009266", "João Pinheiro 2020"), "FillForm()"); // Preenche formulário
+          ExecuteAndLog(FillForm(employee.roleInCompany, employee.lastName, employee.email,
+          employee.firstName, employee.companyName, employee.phoneNumber, employee.address), "FillForm()"); // Preenche formulário
           ExecuteAndLog(SubmitForm(), "SubmitForm()"); // Submete o formulário
         }
         Logger("--- O Robô Finalizou ------------------------------------------------------");
@@ -148,6 +152,64 @@ namespace RpaChallenge
     private static bool SubmitForm()
     {
       return KeepTryingUntil("Click", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input", 3000);
+    }
+    /// <summary>
+    /// Converte arquivo Excel para Json
+    /// </summary>
+    /// <returns></returns>
+    private static bool XlToJson()
+    {
+      try
+      {
+        //Instantiate the spreadsheet creation engine.
+        using (ExcelEngine excelEngine = new ExcelEngine())
+        {
+          IApplication application = excelEngine.Excel;
+
+          //The workbook is opened.
+          FileStream fileStream = new FileStream(@"C:\Users\luis2\source\repos\RpaChallenge\challenge.xlsx", FileMode.Open);
+
+          IWorkbook workbook = application.Workbooks.Open(fileStream, ExcelOpenType.Automatic);
+          IWorksheet worksheet = workbook.Worksheets[0];
+
+          //Export worksheet data into CLR Objects
+          IList<Employee> employees = worksheet.ExportData<Employee>(1, 1, 11, 7);
+
+          //open file stream
+          using (StreamWriter file = File.CreateText(@"C:\Users\luis2\source\repos\RpaChallenge\challenge.json"))
+          {
+            JsonSerializer serializer = new JsonSerializer();
+
+            //serialize object directly into file stream
+            serializer.Serialize(file, employees);
+          }
+        }
+        return true;
+      }
+      catch (Exception e)
+      {
+        Logger(e.Message);
+        return false;
+      }
+    }
+    /// <summary>
+    /// Converte o arquivo Json para uma Entidade do CSharp e salva globalmente para uso do robô
+    /// </summary>
+    /// <returns></returns>
+    private static bool JsonToEntityAndCollect()
+    {
+      try
+      {
+        string json = File.ReadAllText(@"C:\Users\luis2\source\repos\RpaChallenge\challenge.json"); // Abre o arquivo Json como string
+        List<Employee> employees = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Employee>>(json); // Coleta a lista de empregados
+        _employees = employees; // Salva a lista dos empregados globalmente
+        return true;
+      }
+      catch(Exception e)
+      {
+        Logger(e.Message);
+        return false;
+      }
     }
     #endregion
     /// <summary>
