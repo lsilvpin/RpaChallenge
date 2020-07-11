@@ -22,3 +22,48 @@
 11/07/2020 01:41:49: A ação DownloadSpreadSheet() foi executada com sucesso
 11/07/2020 01:41:51: A ação FillFormAndSubmit() foi executada com sucesso
 11/07/2020 01:41:51: --- O Robô Finalizou ------------------------------------------------------
+11/07/2020 11:31:45: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 11:32:07: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 11:32:17: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 11:32:18: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 11:43:06: A ação FillFormAndSubmit() foi executada com sucesso
+11/07/2020 11:43:06: --- O Robô Finalizou ------------------------------------------------------
+11/07/2020 11:58:59: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 11:59:04: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 11:59:13: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 11:59:13: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 12:01:26: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 12:01:30: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 12:01:40: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 12:01:40: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 12:05:44: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 12:05:49: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 12:05:57: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 12:05:57: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 12:05:58: element not interactable
+  (Session info: chrome=83.0.4103.116)
+11/07/2020 12:05:58: --- O Robô Finalizou com ERRO ------------------------------------------------------
+11/07/2020 12:06:41: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 12:06:44: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 12:06:47: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 12:06:47: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 12:07:26: element not interactable
+  (Session info: chrome=83.0.4103.116)
+11/07/2020 12:07:26: --- O Robô Finalizou com ERRO ------------------------------------------------------
+11/07/2020 12:08:47: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 12:08:51: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 12:09:03: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 12:09:03: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[1]/div[6]/a"}
+  (Session info: chrome=83.0.4103.116)
+11/07/2020 12:09:03: --- O Robô Finalizou com ERRO ------------------------------------------------------
+11/07/2020 12:58:40: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 12:58:55: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 12:59:05: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 12:59:06: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 13:02:00: element not interactable
+  (Session info: chrome=83.0.4103.116)
+11/07/2020 13:02:00: --- O Robô Finalizou com ERRO ------------------------------------------------------
+11/07/2020 13:03:47: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 13:03:51: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 13:04:00: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 13:04:01: A ação DownloadSpreadSheet() foi executada com sucesso

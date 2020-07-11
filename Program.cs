@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
@@ -8,7 +9,7 @@ using System.Threading;
 namespace RpaChallenge
 {
   /// <summary>
-  /// TPA que extrai dados de uma spreadsheet e preenche formulário com tais dados
+  /// RPA que extrai dados de uma spreadsheet e preenche formulário com tais dados
   /// </summary>
   class Program
   {
@@ -34,7 +35,8 @@ namespace RpaChallenge
       }
       catch (Exception e)
       {
-        // Retornar erro em alguma lugar
+        Logger(e.Message);
+        Logger("--- O Robô Finalizou com ERRO ------------------------------------------------------");
       }
     }
 
@@ -186,15 +188,21 @@ namespace RpaChallenge
     /// <returns></returns>
     private static bool FillFormAndSubmit()
     {
-      var CorrectPath = _driver.FindElement(By.XPath("/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[1]/rpa1-field/div/label")).Text;
-      bool address = KeepTryingUntil("InputKeys", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[1]/rpa1-field/div/input", 3000, "Joao Pinheiro 2020");
-      bool lastName = KeepTryingUntil("InputKeys", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[2]/rpa1-field/div/input", 3000, "da Silva Pinheiro");
-      bool email = KeepTryingUntil("InputKeys", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[3]/rpa1-field/div/input", 3000, "luis.2.pinheiro@gmail.com");
-      bool role = KeepTryingUntil("InputKeys", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[4]/rpa1-field/div/input", 3000, "Centers Junior");
-      bool firstName = KeepTryingUntil("InputKeys", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[5]/rpa1-field/div/input", 3000, "Luís Henrique");
-      bool phoneNumber = KeepTryingUntil("InputKeys", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[6]/rpa1-field/div/input", 3000, "34920009266");
-      bool companyName = KeepTryingUntil("InputKeys", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[7]/rpa1-field/div/input", 3000, "everis");
-      return address && lastName && email && role && firstName && phoneNumber && companyName;
+      // Primeiro temos que mapear os campos do formulário
+      Dictionary<string, string> formMap = new Dictionary<string, string>();
+      for (int i = 1; i <= 7; i++)
+      {
+        formMap.Add(_driver.FindElement(By.XPath($"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/label")).Text, $"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/input");
+      }
+      Console.WriteLine(formMap["First Name"]);
+      // Agora é só usar o mapa para preencher os campos corretamente
+      return KeepTryingUntil("InputKeys", formMap["Role in Company"], 3000, "Centers Junior") &&
+        KeepTryingUntil("InputKeys", formMap["Last Name"], 3000, "da Silva Pinheiro") &&
+        KeepTryingUntil("InputKeys", formMap["Email"], 3000, "luis.2.pinheiro@gmail.com") &&
+        KeepTryingUntil("InputKeys", formMap["First Name"], 3000, "Luís Henrique") &&
+        KeepTryingUntil("InputKeys", formMap["Company Name"], 3000, "everis") &&
+        KeepTryingUntil("InputKeys", formMap["Phone Number"], 3000, "5534920009266") &&
+        KeepTryingUntil("InputKeys", formMap["Address"], 3000, "João Pinheiro 2020");
     }
   }
 }
