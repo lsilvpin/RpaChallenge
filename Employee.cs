@@ -10,6 +10,9 @@
     public string email { get; set; }
     public string phoneNumber { get; set; }
 
+    public Employee() : base()
+    {
+    }
     public Employee(string firstName, string lastName, string companyName, 
       string roleInCompany, string address, string email, string phoneNumber)
     {

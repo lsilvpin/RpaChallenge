@@ -67,3 +67,46 @@
 11/07/2020 13:03:51: A ação OpenBrowser() foi executada com sucesso
 11/07/2020 13:04:00: A ação NavigateToChallengePage() foi executada com sucesso
 11/07/2020 13:04:01: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 13:34:50: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 13:34:54: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 13:35:04: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 13:35:04: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 13:35:06: A ação FillForm() foi executada com sucesso
+11/07/2020 13:35:06: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:35:06: --- O Robô Finalizou ------------------------------------------------------
+11/07/2020 13:36:45: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 13:36:49: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 13:36:59: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 13:36:59: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 13:37:01: A ação FillForm() foi executada com sucesso
+11/07/2020 13:37:01: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:37:03: A ação FillForm() foi executada com sucesso
+11/07/2020 13:37:03: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:37:04: A ação FillForm() foi executada com sucesso
+11/07/2020 13:37:04: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:37:04: --- O Robô Finalizou ------------------------------------------------------
+11/07/2020 13:38:26: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 13:38:30: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 13:38:39: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 13:38:39: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 13:38:41: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:42: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:44: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:44: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:45: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:45: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:47: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:47: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:49: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:49: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:50: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:50: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:52: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:52: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:53: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:54: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:55: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:55: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:57: A ação FillForm() foi executada com sucesso
+11/07/2020 13:38:57: A ação SubmitForm() foi executada com sucesso
+11/07/2020 13:38:57: --- O Robô Finalizou ------------------------------------------------------

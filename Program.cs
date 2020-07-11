@@ -13,7 +13,8 @@ namespace RpaChallenge
   /// </summary>
   class Program
   {
-    public static ChromeDriver _driver;
+    public static ChromeDriver _driver; // Objeto de gerenciamento da página da web
+    public static List<Employee> _employees = new List<Employee>(); // Receberá os funcionários do Excell
     static void Main(string[] args)
     {
       Start();
@@ -26,11 +27,16 @@ namespace RpaChallenge
       try
       { // Continuar a partir de amanhã
         Logger("--- O Robô Iniciou ------------------------------------------------------");
-        ExecuteAndLog(OpenBrowser(), "OpenBrowser()");
-        ExecuteAndLog(NavigateToChallengePage(), "NavigateToChallengePage()");
-        ExecuteAndLog(DownloadSpreadSheet(), "DownloadSpreadSheet()");
-        // ExecuteAndLog(MoveAndReadSheet(), "MoveAndReadSheet()");
-        ExecuteAndLog(FillFormAndSubmit(), "FillFormAndSubmit()");
+        ExecuteAndLog(OpenBrowser(), "OpenBrowser()"); // Abre o navegador
+        ExecuteAndLog(NavigateToChallengePage(), "NavigateToChallengePage()"); // Navega até a página do desafio
+        ExecuteAndLog(DownloadSpreadSheet(), "DownloadSpreadSheet()"); // Baixa (e move) o arquivo do excel
+        // ExecuteAndLog(MoveAndReadSheet(), "MoveAndReadSheet()"); // Coleta os funcionários do excel
+        for (int i = 0; i < 10; i++)
+        { // Este loop deve ser repetido, uma vez para cada empregado presente na spreadsheet
+          ExecuteAndLog(FillForm("Centers Junior", "da Silva Pinheiro", "lsilvpin@everis.com",
+          "Luís Henrique", "everis", "5534920009266", "João Pinheiro 2020"), "FillForm()"); // Preenche formulário
+          ExecuteAndLog(SubmitForm(), "SubmitForm()"); // Submete o formulário
+        }
         Logger("--- O Robô Finalizou ------------------------------------------------------");
       }
       catch (Exception e)
@@ -113,6 +119,36 @@ namespace RpaChallenge
       }
       return false;
     }
+    /// <summary>
+    /// Preenche o formulário dinâmico
+    /// </summary>
+    /// <returns></returns>
+    private static bool FillForm(string roleInCompany, string lastName, string email, string firstName,
+      string companyName, string phoneNumber, string address)
+    {
+      // Primeiro temos que mapear os campos do formulário
+      Dictionary<string, string> formMap = new Dictionary<string, string>();
+      for (int i = 1; i <= 7; i++)
+      {
+        formMap.Add(_driver.FindElement(By.XPath($"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/label")).Text, $"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/input");
+      }
+      // Agora é só usar o mapa para preencher os campos corretamente
+      return KeepTryingUntil("InputKeys", formMap["Role in Company"], 3000, roleInCompany) &&
+        KeepTryingUntil("InputKeys", formMap["Last Name"], 3000, lastName) &&
+        KeepTryingUntil("InputKeys", formMap["Email"], 3000, email) &&
+        KeepTryingUntil("InputKeys", formMap["First Name"], 3000, firstName) &&
+        KeepTryingUntil("InputKeys", formMap["Company Name"], 3000, companyName) &&
+        KeepTryingUntil("InputKeys", formMap["Phone Number"], 3000, phoneNumber) &&
+        KeepTryingUntil("InputKeys", formMap["Address"], 3000, address);
+    }
+    /// <summary>
+    /// Submete o formulário dinâmico (já preenchido)
+    /// </summary>
+    /// <returns></returns>
+    private static bool SubmitForm()
+    {
+      return KeepTryingUntil("Click", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input", 3000);
+    }
     #endregion
     /// <summary>
     /// Processo simples que apenas tenta abrir o navegador
@@ -181,28 +217,6 @@ namespace RpaChallenge
         Logger(e.Message);
         return false;
       }
-    }
-    /// <summary>
-    /// Preenche o formulário e o submete
-    /// </summary>
-    /// <returns></returns>
-    private static bool FillFormAndSubmit()
-    {
-      // Primeiro temos que mapear os campos do formulário
-      Dictionary<string, string> formMap = new Dictionary<string, string>();
-      for (int i = 1; i <= 7; i++)
-      {
-        formMap.Add(_driver.FindElement(By.XPath($"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/label")).Text, $"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/div/div[{i}]/rpa1-field/div/input");
-      }
-      Console.WriteLine(formMap["First Name"]);
-      // Agora é só usar o mapa para preencher os campos corretamente
-      return KeepTryingUntil("InputKeys", formMap["Role in Company"], 3000, "Centers Junior") &&
-        KeepTryingUntil("InputKeys", formMap["Last Name"], 3000, "da Silva Pinheiro") &&
-        KeepTryingUntil("InputKeys", formMap["Email"], 3000, "luis.2.pinheiro@gmail.com") &&
-        KeepTryingUntil("InputKeys", formMap["First Name"], 3000, "Luís Henrique") &&
-        KeepTryingUntil("InputKeys", formMap["Company Name"], 3000, "everis") &&
-        KeepTryingUntil("InputKeys", formMap["Phone Number"], 3000, "5534920009266") &&
-        KeepTryingUntil("InputKeys", formMap["Address"], 3000, "João Pinheiro 2020");
     }
   }
 }
