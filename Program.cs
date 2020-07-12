@@ -17,6 +17,10 @@ namespace RpaChallenge
   {
     public static ChromeDriver _driver; // Objeto de gerenciamento da página da web
     public static List<Employee> _employees = new List<Employee>(); // Receberá os funcionários do Excell
+    /// <summary>
+    /// Ponto de entrada do programa
+    /// </summary>
+    /// <param name="args">Podem ser passadas entradas ao programa quando chamá-lo para execussão (desnecessário)</param>
     static void Main(string[] args)
     {
       Start();
@@ -27,14 +31,15 @@ namespace RpaChallenge
     private static void Start()
     {
       try
-      { // Continuar a partir de amanhã
+      {
         Logger("--- O Robô Iniciou ------------------------------------------------------");
         ExecuteAndLog(OpenBrowser(), "OpenBrowser()"); // Abre o navegador
         ExecuteAndLog(NavigateToChallengePage(), "NavigateToChallengePage()"); // Navega até a página do desafio
         ExecuteAndLog(ClickOnStart(), "ClickOnStart()"); // Clica no botão Start
-        ExecuteAndLog(DownloadSpreadSheet(), "DownloadSpreadSheet()"); // Baixa (e move) o arquivo do excel
-        ExecuteAndLog(XlToJson(), "XltoJson()"); // Converte Excel para Json
-        ExecuteAndLog(JsonToEntityAndCollect(), "JsonToEntity()"); // Converte Json para Entidade e Coleta lista
+        ExecuteAndLog(DownloadSpreadSheet(), "DownloadSpreadSheet()"); // Baixa o arquivo do excel
+        ExecuteAndLog(MoveSheetIfNecessary(), "MoveSheetIfNecessary()"); // Move o excel se ainda não existir no destino
+        ExecuteAndLog(XlToJson(), "XlToJson()"); // Converte Excel para Json
+        ExecuteAndLog(JsonToEntityAndCollect(), "JsonToEntityAndCollect()"); // Converte Json para Entidade e Coleta lista
         foreach (Employee employee in _employees)
         { // Este loop deve ser repetido, uma vez para cada empregado presente na spreadsheet
           ExecuteAndLog(FillForm(employee.roleInCompany, employee.lastName, employee.email,
@@ -49,7 +54,7 @@ namespace RpaChallenge
         Logger("--- O Robô Finalizou com ERRO ------------------------------------------------------");
       }
     }
-
+    // Abaixo uma caixa de ferramentas úteis que o robô precisa de forma recorrente
     #region Utility Tools
     /// <summary>
     /// Registra feedbacks sobre o andamento do robô
@@ -78,7 +83,7 @@ namespace RpaChallenge
       }
     }
     /// <summary>
-    /// Método que verifica o resultado de uma ação foi positivo, se sim registra isto no Log.txt
+    /// Método que verifica se o resultado de uma ação foi positivo, se sim registra isto no Log.txt
     /// </summary>
     /// <param name="actionResult">Resultado da ação</param>
     /// <param name="actionName">Nome da ação</param>
@@ -122,6 +127,77 @@ namespace RpaChallenge
         return true;
       }
       return false;
+    }
+    #endregion
+    // A seguir estão as ações (processos/passo a passo) que o robô executará em Start()
+    #region Actions
+    /// <summary>
+    /// Processo simples que apenas tenta abrir o navegador
+    /// </summary>
+    private static bool OpenBrowser()
+    {
+      try
+      {
+        _driver = new ChromeDriver();
+        return true;
+      }
+      catch (Exception e)
+      {
+        Logger(e.Message);
+        return false;
+      }
+    }
+    /// <summary>
+    /// Navega para o endereço deste desafio
+    /// </summary>
+    private static bool NavigateToChallengePage()
+    {
+      try
+      {
+        _driver.Navigate().GoToUrl("http://www.rpachallenge.com/");
+        return true;
+      }
+      catch (Exception e)
+      {
+        Logger(e.Message);
+        return false;
+      }
+    }
+    /// <summary>
+    /// Fica tentando realizar o download
+    /// </summary>
+    /// <returns></returns>
+    private static bool DownloadSpreadSheet()
+    {
+      return KeepTryingUntil("Click", "/html/body/app-root/div[2]/app-rpa1/div/div[1]/div[6]/a", 3000);
+    }
+    /// <summary>
+    /// Gerenciar o arquivo baixado (de Excel)
+    /// </summary>
+    /// <returns></returns>
+    private static bool MoveSheetIfNecessary()
+    {
+      try
+      {
+        // Move o arquivo, se necessário
+        if (!File.Exists(@"C:\Users\luis2\source\repos\RpaChallenge\challenge.xlsx"))
+        {
+          File.Move(@"C:\Users\luis2\Downloads\challenge.xlsx", @"C:\Users\luis2\source\repos\RpaChallenge\challenge.xlsx");
+        }
+        else
+        {
+          Logger(@"O arquivo challenge.xlsx já existia na pasta de destino C:\Users\luis2\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido");
+        }
+        // Ler arquivo do excel   --------------------------------------------------aqui
+        // Extrair informações do Excel File
+        // - ------------------------------------------------------------------------------
+        return true;
+      }
+      catch (Exception e)
+      {
+        Logger(e.Message);
+        return false;
+      }
     }
     /// <summary>
     /// Converte arquivo Excel para Json
@@ -175,75 +251,6 @@ namespace RpaChallenge
         _employees = employees; // Salva a lista dos empregados globalmente
         return true;
       }
-      catch(Exception e)
-      {
-        Logger(e.Message);
-        return false;
-      }
-    }
-    #endregion
-    /// <summary>
-    /// Processo simples que apenas tenta abrir o navegador
-    /// </summary>
-    private static bool OpenBrowser()
-    {
-      try
-      {
-        _driver = new ChromeDriver();
-        return true;
-      }
-      catch (Exception e)
-      {
-        Logger(e.Message);
-        return false;
-      }
-    }
-    /// <summary>
-    /// Navega para o endereço deste desafio
-    /// </summary>
-    private static bool NavigateToChallengePage()
-    {
-      try
-      {
-        _driver.Navigate().GoToUrl("http://www.rpachallenge.com/");
-        return true;
-      }
-      catch (Exception e)
-      {
-        Logger(e.Message);
-        return false;
-      }
-    }
-    /// <summary>
-    /// Fica tentando realizar o download
-    /// </summary>
-    /// <returns></returns>
-    private static bool DownloadSpreadSheet()
-    {
-      return KeepTryingUntil("Click", "/html/body/app-root/div[2]/app-rpa1/div/div[1]/div[6]/a", 3000);
-    }
-    /// <summary>
-    /// Gerenciar o arquivo baixado (de Excel)
-    /// </summary>
-    /// <returns></returns>
-    private static bool MoveAndReadSheet()
-    {
-      try
-      {
-        // Move o arquivo, se necessário
-        if (!File.Exists(@"C:\Users\luis2\source\repos\RpaChallenge\challenge.xlsx"))
-        {
-          File.Move(@"C:\Users\luis2\Downloads\challenge.xlsx", @"C:\Users\luis2\source\repos\RpaChallenge\challenge.xlsx");
-        }
-        else
-        {
-          Logger(@"O arquivo challenge.xlsx já existia na pasta de destino C:\Users\luis2\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido");
-        }
-        // Ler arquivo do excel   --------------------------------------------------aqui
-        // Extrair informações do Excel File
-        // - ------------------------------------------------------------------------------
-        return true;
-      }
       catch (Exception e)
       {
         Logger(e.Message);
@@ -280,10 +287,14 @@ namespace RpaChallenge
     {
       return KeepTryingUntil("Click", "/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input", 3000);
     }
-
+    /// <summary>
+    /// Clica no botão "Start" da tela inicial do challenge
+    /// </summary>
+    /// <returns></returns>
     private static bool ClickOnStart()
     {
       return KeepTryingUntil("Click", "/html/body/app-root/div[2]/app-rpa1/div/div[1]/div[6]/button", 3000);
     }
+    #endregion
   }
 }

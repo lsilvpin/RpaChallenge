@@ -378,3 +378,135 @@
 11/07/2020 17:47:38: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
   (Session info: chrome=83.0.4103.116)
 11/07/2020 17:47:38: --- O Robô Finalizou com ERRO ------------------------------------------------------
+11/07/2020 17:53:01: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 17:53:06: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 17:53:17: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 17:53:18: A ação ClickOnStart() foi executada com sucesso
+11/07/2020 17:53:18: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 17:53:33: A ação XltoJson() foi executada com sucesso
+11/07/2020 17:53:33: A ação JsonToEntity() foi executada com sucesso
+11/07/2020 17:53:37: A ação FillForm() foi executada com sucesso
+11/07/2020 17:53:37: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:53:40: A ação FillForm() foi executada com sucesso
+11/07/2020 17:53:40: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:53:43: A ação FillForm() foi executada com sucesso
+11/07/2020 17:53:44: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:53:47: A ação FillForm() foi executada com sucesso
+11/07/2020 17:53:47: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:53:50: A ação FillForm() foi executada com sucesso
+11/07/2020 17:53:50: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:53:53: A ação FillForm() foi executada com sucesso
+11/07/2020 17:53:53: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:53:56: A ação FillForm() foi executada com sucesso
+11/07/2020 17:53:56: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:53:59: A ação FillForm() foi executada com sucesso
+11/07/2020 17:53:59: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:54:01: A ação FillForm() foi executada com sucesso
+11/07/2020 17:54:02: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:54:05: A ação FillForm() foi executada com sucesso
+11/07/2020 17:54:05: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+11/07/2020 17:54:05: --- O Robô Finalizou com ERRO ------------------------------------------------------
+11/07/2020 17:54:52: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 17:54:58: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 17:55:10: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 17:55:30: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 17:55:35: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 17:55:46: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 17:55:47: A ação ClickOnStart() foi executada com sucesso
+11/07/2020 17:55:47: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 17:55:51: A ação XltoJson() foi executada com sucesso
+11/07/2020 17:55:51: A ação JsonToEntity() foi executada com sucesso
+11/07/2020 17:55:55: A ação FillForm() foi executada com sucesso
+11/07/2020 17:55:55: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:55:58: A ação FillForm() foi executada com sucesso
+11/07/2020 17:55:59: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:56:01: A ação FillForm() foi executada com sucesso
+11/07/2020 17:56:01: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:56:05: A ação FillForm() foi executada com sucesso
+11/07/2020 17:56:05: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:56:08: A ação FillForm() foi executada com sucesso
+11/07/2020 17:56:08: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:56:11: A ação FillForm() foi executada com sucesso
+11/07/2020 17:56:11: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:56:14: A ação FillForm() foi executada com sucesso
+11/07/2020 17:56:14: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:56:17: A ação FillForm() foi executada com sucesso
+11/07/2020 17:56:17: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:56:20: A ação FillForm() foi executada com sucesso
+11/07/2020 17:56:20: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:56:23: A ação FillForm() foi executada com sucesso
+11/07/2020 17:56:23: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+11/07/2020 17:56:23: --- O Robô Finalizou com ERRO ------------------------------------------------------
+11/07/2020 17:59:14: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 17:59:19: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 17:59:24: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 17:59:25: A ação ClickOnStart() foi executada com sucesso
+11/07/2020 17:59:25: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 17:59:27: A ação XltoJson() foi executada com sucesso
+11/07/2020 17:59:27: A ação JsonToEntity() foi executada com sucesso
+11/07/2020 17:59:32: A ação FillForm() foi executada com sucesso
+11/07/2020 17:59:32: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:59:37: A ação FillForm() foi executada com sucesso
+11/07/2020 17:59:38: A ação SubmitForm() foi executada com sucesso
+11/07/2020 17:59:58: --- O Robô Iniciou ------------------------------------------------------
+11/07/2020 18:00:04: A ação OpenBrowser() foi executada com sucesso
+11/07/2020 18:00:08: A ação NavigateToChallengePage() foi executada com sucesso
+11/07/2020 18:00:08: A ação ClickOnStart() foi executada com sucesso
+11/07/2020 18:00:09: A ação DownloadSpreadSheet() foi executada com sucesso
+11/07/2020 18:00:11: A ação XltoJson() foi executada com sucesso
+11/07/2020 18:00:12: A ação JsonToEntity() foi executada com sucesso
+11/07/2020 18:00:18: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:18: A ação SubmitForm() foi executada com sucesso
+11/07/2020 18:00:23: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:23: A ação SubmitForm() foi executada com sucesso
+11/07/2020 18:00:26: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:27: A ação SubmitForm() foi executada com sucesso
+11/07/2020 18:00:30: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:30: A ação SubmitForm() foi executada com sucesso
+11/07/2020 18:00:33: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:33: A ação SubmitForm() foi executada com sucesso
+11/07/2020 18:00:36: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:36: A ação SubmitForm() foi executada com sucesso
+11/07/2020 18:00:39: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:39: A ação SubmitForm() foi executada com sucesso
+11/07/2020 18:00:42: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:42: A ação SubmitForm() foi executada com sucesso
+11/07/2020 18:00:45: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:45: A ação SubmitForm() foi executada com sucesso
+11/07/2020 18:00:49: A ação FillForm() foi executada com sucesso
+11/07/2020 18:00:50: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+11/07/2020 18:00:50: --- O Robô Finalizou com ERRO ------------------------------------------------------
+12/07/2020 08:51:43: --- O Robô Iniciou ------------------------------------------------------
+12/07/2020 08:52:10: A ação OpenBrowser() foi executada com sucesso
+12/07/2020 08:52:20: A ação NavigateToChallengePage() foi executada com sucesso
+12/07/2020 08:52:21: A ação ClickOnStart() foi executada com sucesso
+12/07/2020 08:52:21: A ação DownloadSpreadSheet() foi executada com sucesso
+12/07/2020 08:52:21: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\luis2\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+12/07/2020 08:52:21: A ação MoveSheetIfNecessary() foi executada com sucesso
+12/07/2020 08:52:26: A ação XlToJson() foi executada com sucesso
+12/07/2020 08:52:26: A ação JsonToEntityAndCollect() foi executada com sucesso
+12/07/2020 08:52:28: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:29: A ação SubmitForm() foi executada com sucesso
+12/07/2020 08:52:30: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:30: A ação SubmitForm() foi executada com sucesso
+12/07/2020 08:52:32: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:32: A ação SubmitForm() foi executada com sucesso
+12/07/2020 08:52:33: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:34: A ação SubmitForm() foi executada com sucesso
+12/07/2020 08:52:35: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:35: A ação SubmitForm() foi executada com sucesso
+12/07/2020 08:52:37: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:37: A ação SubmitForm() foi executada com sucesso
+12/07/2020 08:52:39: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:39: A ação SubmitForm() foi executada com sucesso
+12/07/2020 08:52:40: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:40: A ação SubmitForm() foi executada com sucesso
+12/07/2020 08:52:42: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:42: A ação SubmitForm() foi executada com sucesso
+12/07/2020 08:52:44: A ação FillForm() foi executada com sucesso
+12/07/2020 08:52:46: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+12/07/2020 08:52:46: --- O Robô Finalizou com ERRO ------------------------------------------------------
