@@ -510,3 +510,339 @@
 12/07/2020 08:52:46: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
   (Session info: chrome=83.0.4103.116)
 12/07/2020 08:52:46: --- O Robô Finalizou com ERRO ------------------------------------------------------
+13/07/2020 11:31:26: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 11:31:28: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 11:31:47: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 11:33:39: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 11:33:40: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 11:34:06: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 11:34:11: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 11:34:16: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 11:34:16: Não foi possível localizar o arquivo 'C:\Users\luis2\Downloads\challenge.xlsx'.
+13/07/2020 11:34:16: Não foi possível localizar uma parte do caminho 'C:\Users\luis2\source\repos\RpaChallenge\challenge.xlsx'.
+13/07/2020 11:34:16: Não foi possível localizar uma parte do caminho 'C:\Users\luis2\source\repos\RpaChallenge\challenge.json'.
+13/07/2020 11:34:16: --- O Robô Finalizou ------------------------------------------------------
+13/07/2020 11:38:31: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 11:38:32: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 11:39:05: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 11:39:06: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 11:39:06: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 11:39:06: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 11:39:06: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 11:39:07: A ação XlToJson() foi executada com sucesso
+13/07/2020 11:39:07: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 11:39:09: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:09: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:39:11: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:11: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:39:12: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:13: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:39:14: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:15: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:39:16: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:16: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:39:18: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:18: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:39:20: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:20: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:39:21: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:22: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:39:23: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:23: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:39:25: A ação FillForm() foi executada com sucesso
+13/07/2020 11:39:25: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+13/07/2020 11:39:25: --- O Robô Finalizou com ERRO ------------------------------------------------------
+13/07/2020 11:42:04: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 11:42:05: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 11:42:29: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 11:42:30: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 11:42:30: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 11:42:30: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 11:42:30: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 11:42:31: A ação XlToJson() foi executada com sucesso
+13/07/2020 11:42:31: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 11:42:33: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:33: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:42:34: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:35: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:42:36: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:36: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:42:38: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:38: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:42:40: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:40: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:42:41: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:41: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:42:43: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:43: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:42:45: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:45: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:42:46: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:46: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:42:48: A ação FillForm() foi executada com sucesso
+13/07/2020 11:42:48: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+13/07/2020 11:42:48: --- O Robô Finalizou com ERRO ------------------------------------------------------
+13/07/2020 11:47:53: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 11:48:19: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 11:48:54: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 11:49:08: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 11:49:18: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 11:49:25: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 11:49:25: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 11:49:57: A ação XlToJson() foi executada com sucesso
+13/07/2020 11:50:12: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 11:50:40: A ação FillForm() foi executada com sucesso
+13/07/2020 11:50:49: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:51:03: A ação FillForm() foi executada com sucesso
+13/07/2020 11:51:09: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:51:26: A ação FillForm() foi executada com sucesso
+13/07/2020 11:51:32: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:51:40: A ação FillForm() foi executada com sucesso
+13/07/2020 11:51:46: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:51:52: A ação FillForm() foi executada com sucesso
+13/07/2020 11:51:58: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:52:03: A ação FillForm() foi executada com sucesso
+13/07/2020 11:52:07: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:52:17: A ação FillForm() foi executada com sucesso
+13/07/2020 11:52:23: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:52:28: A ação FillForm() foi executada com sucesso
+13/07/2020 11:52:32: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:52:42: A ação FillForm() foi executada com sucesso
+13/07/2020 11:52:55: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:53:05: A ação FillForm() foi executada com sucesso
+13/07/2020 11:53:57: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+13/07/2020 11:54:29: --- O Robô Finalizou com ERRO ------------------------------------------------------
+13/07/2020 11:55:02: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 11:55:04: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 11:55:36: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 11:55:36: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 11:55:36: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 11:55:36: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 11:55:36: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 11:55:37: A ação XlToJson() foi executada com sucesso
+13/07/2020 11:55:37: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 11:55:39: A ação FillForm() foi executada com sucesso
+13/07/2020 11:55:45: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:55:55: A ação FillForm() foi executada com sucesso
+13/07/2020 11:55:56: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:56:01: A ação FillForm() foi executada com sucesso
+13/07/2020 11:56:02: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:56:05: A ação FillForm() foi executada com sucesso
+13/07/2020 11:56:06: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:56:10: A ação FillForm() foi executada com sucesso
+13/07/2020 11:56:11: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:56:14: A ação FillForm() foi executada com sucesso
+13/07/2020 11:56:15: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:56:19: A ação FillForm() foi executada com sucesso
+13/07/2020 11:56:19: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:56:22: A ação FillForm() foi executada com sucesso
+13/07/2020 11:56:23: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:56:27: A ação FillForm() foi executada com sucesso
+13/07/2020 11:56:38: A ação SubmitForm() foi executada com sucesso
+13/07/2020 11:56:53: A ação FillForm() foi executada com sucesso
+13/07/2020 12:00:56: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+13/07/2020 12:01:11: --- O Robô Finalizou com ERRO ------------------------------------------------------
+13/07/2020 12:01:27: --- O Robô Finalizou ------------------------------------------------------
+13/07/2020 12:02:40: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 12:02:41: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 12:03:13: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 12:03:13: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 12:03:13: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 12:03:13: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 12:03:13: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 12:03:14: A ação XlToJson() foi executada com sucesso
+13/07/2020 12:03:14: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 12:03:16: A ação FillForm() foi executada com sucesso
+13/07/2020 12:03:34: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:03:39: A ação FillForm() foi executada com sucesso
+13/07/2020 12:03:39: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:03:43: A ação FillForm() foi executada com sucesso
+13/07/2020 12:03:44: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:03:47: A ação FillForm() foi executada com sucesso
+13/07/2020 12:03:47: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:03:50: A ação FillForm() foi executada com sucesso
+13/07/2020 12:03:51: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:03:54: A ação FillForm() foi executada com sucesso
+13/07/2020 12:03:54: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:03:57: A ação FillForm() foi executada com sucesso
+13/07/2020 12:03:58: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:04:00: A ação FillForm() foi executada com sucesso
+13/07/2020 12:04:01: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:04:04: A ação FillForm() foi executada com sucesso
+13/07/2020 12:04:04: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:04:07: A ação FillForm() foi executada com sucesso
+13/07/2020 12:05:10: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+13/07/2020 12:05:10: --- O Robô Finalizou com ERRO ------------------------------------------------------
+13/07/2020 12:05:23: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 12:05:24: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 12:05:57: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 12:05:57: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 12:05:57: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 12:05:57: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 12:05:57: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 12:05:58: A ação XlToJson() foi executada com sucesso
+13/07/2020 12:05:58: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 12:06:00: A ação FillForm() foi executada com sucesso
+13/07/2020 12:06:03: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:06:07: A ação FillForm() foi executada com sucesso
+13/07/2020 12:06:08: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:06:10: A ação FillForm() foi executada com sucesso
+13/07/2020 12:06:11: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:06:13: A ação FillForm() foi executada com sucesso
+13/07/2020 12:06:14: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:06:16: A ação FillForm() foi executada com sucesso
+13/07/2020 12:06:17: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:06:19: A ação FillForm() foi executada com sucesso
+13/07/2020 12:06:20: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:06:22: A ação FillForm() foi executada com sucesso
+13/07/2020 12:06:23: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:06:25: A ação FillForm() foi executada com sucesso
+13/07/2020 12:06:26: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:06:28: A ação FillForm() foi executada com sucesso
+13/07/2020 12:06:28: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:06:31: A ação FillForm() foi executada com sucesso
+13/07/2020 12:39:39: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div[2]/app-rpa1/div/div[2]/form/input"}
+  (Session info: chrome=83.0.4103.116)
+13/07/2020 12:39:39: --- O Robô Finalizou com ERRO ------------------------------------------------------
+13/07/2020 12:40:28: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 12:40:30: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 12:41:01: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 12:41:02: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 12:41:02: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 12:41:02: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 12:41:02: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 12:41:03: A ação XlToJson() foi executada com sucesso
+13/07/2020 12:41:03: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 12:41:05: A ação FillForm() foi executada com sucesso
+13/07/2020 12:50:49: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 12:50:50: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 12:51:23: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 12:51:23: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 12:51:23: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 12:51:23: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 12:51:23: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 12:51:25: A ação XlToJson() foi executada com sucesso
+13/07/2020 12:51:25: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 12:51:27: A ação FillForm() foi executada com sucesso
+13/07/2020 12:51:27: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:51:29: A ação FillForm() foi executada com sucesso
+13/07/2020 12:51:29: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:51:31: A ação FillForm() foi executada com sucesso
+13/07/2020 12:51:31: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:51:33: A ação FillForm() foi executada com sucesso
+13/07/2020 12:51:33: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:51:34: A ação FillForm() foi executada com sucesso
+13/07/2020 12:51:35: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:51:36: A ação FillForm() foi executada com sucesso
+13/07/2020 12:51:37: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:51:38: A ação FillForm() foi executada com sucesso
+13/07/2020 12:51:38: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:51:40: A ação FillForm() foi executada com sucesso
+13/07/2020 12:51:40: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:51:42: A ação FillForm() foi executada com sucesso
+13/07/2020 12:51:42: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:51:44: A ação FillForm() foi executada com sucesso
+13/07/2020 12:52:30: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 12:52:31: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 12:53:03: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 12:53:03: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 12:53:04: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 12:53:04: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 12:53:04: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 12:53:05: A ação XlToJson() foi executada com sucesso
+13/07/2020 12:53:05: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 12:53:07: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:07: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:53:09: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:09: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:53:11: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:11: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:53:12: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:12: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:53:14: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:14: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:53:16: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:16: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:53:18: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:18: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:53:20: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:20: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:53:22: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:22: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:53:23: A ação FillForm() foi executada com sucesso
+13/07/2020 12:53:56: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 12:53:58: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 12:54:30: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 12:54:30: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 12:54:30: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 12:54:30: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 12:54:30: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 12:54:32: A ação XlToJson() foi executada com sucesso
+13/07/2020 12:54:32: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 12:54:34: A ação FillForm() foi executada com sucesso
+13/07/2020 12:54:39: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:54:44: A ação FillForm() foi executada com sucesso
+13/07/2020 12:54:44: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:54:47: A ação FillForm() foi executada com sucesso
+13/07/2020 12:54:48: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:54:50: A ação FillForm() foi executada com sucesso
+13/07/2020 12:54:51: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:54:53: A ação FillForm() foi executada com sucesso
+13/07/2020 12:54:54: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:54:57: A ação FillForm() foi executada com sucesso
+13/07/2020 12:54:57: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:55:00: A ação FillForm() foi executada com sucesso
+13/07/2020 12:55:11: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:55:15: A ação FillForm() foi executada com sucesso
+13/07/2020 12:55:20: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:55:39: A ação FillForm() foi executada com sucesso
+13/07/2020 12:55:44: A ação SubmitForm() foi executada com sucesso
+13/07/2020 12:55:56: A ação FillForm() foi executada com sucesso
+13/07/2020 12:59:22: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 12:59:23: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 12:59:55: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 12:59:55: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 12:59:56: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 12:59:56: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 12:59:56: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 12:59:57: A ação XlToJson() foi executada com sucesso
+13/07/2020 12:59:57: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 12:59:59: A ação FillForm() foi executada com sucesso
+13/07/2020 13:00:17: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 13:00:19: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 13:00:29: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 13:00:42: --- O Robô Iniciou ------------------------------------------------------
+13/07/2020 13:00:44: A ação OpenBrowser() foi executada com sucesso
+13/07/2020 13:01:16: A ação NavigateToChallengePage() foi executada com sucesso
+13/07/2020 13:01:16: A ação ClickOnStart() foi executada com sucesso
+13/07/2020 13:01:16: A ação DownloadSpreadSheet() foi executada com sucesso
+13/07/2020 13:01:16: O arquivo challenge.xlsx já existia na pasta de destino C:\Users\lsilvpin\source\repos\RpaChallenge\ portanto o que foi baixado não foi movido
+13/07/2020 13:01:16: A ação MoveSheetIfNecessary() foi executada com sucesso
+13/07/2020 13:01:18: A ação XlToJson() foi executada com sucesso
+13/07/2020 13:01:18: A ação JsonToEntityAndCollect() foi executada com sucesso
+13/07/2020 13:01:19: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:19: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:21: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:21: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:23: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:23: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:25: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:25: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:26: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:27: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:28: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:29: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:30: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:30: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:32: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:32: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:34: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:34: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:36: A ação FillForm() foi executada com sucesso
+13/07/2020 13:01:40: A ação SubmitForm() foi executada com sucesso
+13/07/2020 13:01:40: --- O Robô Finalizou ------------------------------------------------------
